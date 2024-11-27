@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #47484e;
+    --cal-color: #171717;
+    --input-color: #505054;
+    --button-color: #4b4e5d;
+    --ouro-color: orange;
+    --violeta-color: blueviolet;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora {
+    background: var(--cal-color);
+    padding: 25px;
+    border-radius: 20px;
+}
+.calculadora h1{
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.calculadora input {
+    width: 315px;
+    padding: 25px;
+    background: transparent;
+    border: 2px solid var(--input-color);
+    border-radius: 20px;
+    outline: none;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+}
+.calculadora input::placeholder {
+    color: #fff;
+}
+button {
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: var(--button-color);
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+.entrar {
+    width: 144px;
+    background: var(--ouro-color);
+}
+.main {
+    background-color: var(--ouro-color);
+}
+.operador {
+    background: var(--violeta-color);
+}
